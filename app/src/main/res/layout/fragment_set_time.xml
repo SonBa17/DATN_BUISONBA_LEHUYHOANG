@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetTimeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/plant_background2">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="413dp"
+            android:layout_height="591dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.335">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/tv_setting1"
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="-1dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/background_data"
+                android:backgroundTint="@color/white">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/tv_setting2"
+                    android:layout_width="364dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="28dp"
+                    android:background="@drawable/background_data1"
+                    android:backgroundTint="@color/dark_back"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.469"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tv_settime1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Thời gian: "
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.064"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <EditText
+                        android:id="@+id/edit_time1"
+                        android:layout_width="127dp"
+                        android:layout_height="46dp"
+                        android:layout_below="@id/tv_settime1"
+                        android:layout_marginStart="44dp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/text_lock"
+                        app:layout_constraintStart_toEndOf="@+id/tv_settime1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tv_setting3"
+
+                    android:layout_width="364dp"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/background_data1"
+                    android:backgroundTint="@color/dark_back"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_setting2"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/tv_setting2"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_setting2">
+
+                    <Switch
+                        android:id="@+id/check_time1"
+                        android:layout_width="64dp"
+                        android:layout_height="41dp"
+                        android:layout_below="@id/tv_settimerepeat"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:clickable="true"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_settime2"
+                        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                    <TextView
+                        android:id="@+id/tv_settime2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Khoảng thời gian: "
+                        android:textColor="@color/black"
+                        android:textSize="25dp" />
+
+
+                    <EditText
+                        android:id="@+id/edit_time2"
+                        android:layout_width="58dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="230dp"
+                        android:layout_marginTop="16dp"
+                        android:minWidth="80dp"
+                        android:textColor="@color/text_lock"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_settimerepeat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_settime2"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="25dp"
+                        android:text="Thời gian lặp lại: "
+                        android:textColor="@color/black"
+                        android:textSize="25dp" />
+
+                    <EditText
+                        android:id="@+id/edit_timerepeat"
+                        android:layout_width="59dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_settime2"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/tv_settimerepeat"
+                        android:textColor="@color/text_lock"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_settime2"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginEnd="30dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="25dp"
+                        android:text="Giờ"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/tv_setting4"
+                    android:layout_width="364dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="48dp"
+                    android:background="@drawable/background_data1"
+                    android:backgroundTint="@color/dark_back"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_setting2"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/tv_setting2"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_setting3">
+
+                    <TextView
+                        android:id="@+id/tv_settime3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="36dp"
+                        android:text="Thời gian tự chọn:"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.087"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/edit_time3"
+                        android:layout_width="130dp"
+                        android:layout_height="46dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="24dp"
+                        android:textColor="@color/text_lock"
+                        app:layout_constraintStart_toEndOf="@+id/tv_settime3"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <Switch
+                        android:id="@+id/check_time2"
+                        android:layout_width="73dp"
+                        android:layout_height="39dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_toRightOf="@id/edit_time3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_settime3"
+                        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
